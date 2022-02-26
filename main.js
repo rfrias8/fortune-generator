@@ -4,47 +4,49 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max + 1);
   };
 
-// randomNum = getRandomInt(10);
+fortuneButton.onclick = function getFortune() {
 
-function getFortune() {
-
-    // get the current value of the button's display property
-    // let displaySetting = myButton.style.display;
-    
-    //get the button so that we can change it 
     let number = getRandomInt(10);
         switch(number){
         case 1:
-            documnent.getElementById('output').innerHTML = "You are awesome";
+            document.getElementById('output').innerHTML = "You are awesome";
             break;
         case 2:
-            documnent.getElementById('output').innerHTML = "Hello";
+            document.getElementById('output').innerHTML = "Hello";
             break;
         case 3:
-            documnent.getElementById('output').innerHTML = "You rock";
+            document.getElementById('output').innerHTML = "You rock";
             break;
         case 4:
-            documnent.getElementById('output').innerHTML = "You stink";
+            document.getElementById('output').innerHTML = "You stink";
             break;
         case 5:
-            documnent.getElementById('output').innerHTML = "You da best";
+            document.getElementById('output').innerHTML = "You da best";
             break;
         case 6:
-            documnent.getElementById('output').innerHTML = "Salsa";
+            document.getElementById('output').innerHTML = "Salsa";
             break;
         case 7:
-            documnent.getElementById('output').innerHTML = "hungry";
+            document.getElementById('output').innerHTML = "hungry";
             break;
         case 8:
-            documnent.getElementById('output').innerHTML = "pizza";
+            document.getElementById('output').innerHTML = "pizza";
             break;
         case 9:
-            documnent.getElementById('output').innerHTML = "phone";
+            document.getElementById('output').innerHTML = "phone";
             break;
         case 10:
-            documnent.getElementById('output').innerHTML = "vacation";
+            document.getElementById('output').innerHTML = "vacation";
             break;
         default:
-            returdocumnent.getElementById('output').innerHTML = "The stars are unclear, come back for your fortune tomorrow.";
+            document.getElementById('output').innerHTML = "The stars are unclear, come back for your fortune tomorrow.";
        }
 };
+
+fortuneButton.onmouseover = function() {
+    document.getElementById('button').style.backgroundColor = "blue";
+};
+
+fortuneButton.onmouseout = function() {
+    document.getElementById('button').style.backgroundColor = "#f9fafb";
+}
